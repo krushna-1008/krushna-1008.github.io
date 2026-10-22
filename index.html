@@ -7,56 +7,50 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Krushna</h1>
-    <p>CS @ IISER Bhopal · Quantitative developer in training</p>
-    <nav>
+  <nav class="topbar">
+    <span class="brand">Krushna</span>
+    <div class="links">
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">IISER Bhopal · Class of 2028</p>
+    <h1>Building fast systems<br>for quantitative trading.</h1>
+    <p class="lede">Computer science student focused on low-latency C++, market microstructure, and trading infrastructure.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>BS Computer Science student at IISER Bhopal (Class of 2028), building low-latency systems and trading infrastructure in C++.</p>
-    </section>
-
-    <section id="projects">
+    <section id="projects" class="section">
       <h2>Projects</h2>
-      <article>
-        <h3>Limit Order Book</h3>
-        <p>C++ matching engine with limit, market, and IOC orders. Unit tested and benchmarked.</p>
-        <a href="https://github.com/yourusername/lob">Code</a>
-      </article>
-      <article>
-        <h3>Market-Making Simulator</h3>
-        <p>Avellaneda-Stoikov quoting strategy with backtesting.</p>
-        <a href="https://github.com/yourusername/mm-sim">Code</a>
-      </article>
+      <div class="grid">
+        <article class="card">
+          <h3>Limit Order Book</h3>
+          <p>C++ matching engine with limit, market, and IOC orders. Unit tested and benchmarked.</p>
+          <div class="tags"><span>C++</span><span>Matching engine</span></div>
+          <a class="link" href="https://github.com/yourusername/lob">View code →</a>
+        </article>
+        <article class="card">
+          <h3>Market-Making Simulator</h3>
+          <p>Avellaneda-Stoikov quoting strategy with a backtesting harness.</p>
+          <div class="tags"><span>C++</span><span>Quant</span></div>
+          <a class="link" href="https://github.com/yourusername/mm-sim">View code →</a>
+        </article>
+      </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section">
       <h2>Experience</h2>
-      <article>
-        <h3>Backend Engineering Intern, Jio Platforms</h3>
-        <p>Built services with FastAPI, PostgreSQL, and Redis.</p>
+      <article class="card wide">
+        <h3>Backend Engineering Intern · Jio Platforms</h3>
+        <p>Built backend services with FastAPI, PostgreSQL, and Redis.</p>
       </article>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:you@example.com">Email</a> ·
-        <a href="https://github.com/yourusername">GitHub</a> ·
-        <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Krushna</p>
-  </footer>
-</body>
-</html>
+    <section id="contact"
